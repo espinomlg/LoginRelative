@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.espino.loginrelative.LoginRelative">
+
+    <TextView
+        android:text="Usuario:"
+        android:layout_width="@dimen/widget_textview_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUser"
+        android:layout_marginTop="@dimen/widget_margin_top"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Password:"
+        android:layout_width="@dimen/widget_textview_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUser"
+        android:layout_alignStart="@+id/txtUser"
+        android:layout_alignLeft="@id/txtUser"
+        android:id="@+id/txtPasswd"
+        android:layout_marginTop="@dimen/widget_margin_top"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:layout_toRightOf="@+id/txtUser"
+        android:layout_toEndOf="@id/txtUser"
+        android:layout_alignBaseline="@id/txtUser"
+        android:layout_alignLeft="@+id/editPasswd"
+        android:id="@+id/editUser" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:layout_below="@+id/editUser"
+        android:layout_toRightOf="@+id/txtPasswd"
+        android:layout_toEndOf="@id/txtPasswd"
+        android:layout_alignBaseline="@id/txtPasswd"
+        android:id="@+id/editPasswd" />
+
+    <CheckBox
+        android:text="Recordar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPasswd"
+        android:layout_marginTop="@dimen/widget_margin_top"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/checkBox" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_margin_top"
+        android:layout_below="@id/checkBox">
+
+        <Button
+            android:text="@android:string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel" />
+
+        <Button
+            android:text="@android:string/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOK" />
+
+    </LinearLayout>
+</RelativeLayout>
